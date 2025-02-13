@@ -1,0 +1,39 @@
+:root {
+    --primary-color: pink;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.cat {
+    width: 150px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.dance {
+    content: url('https://media1.tenor.com/m/ZNFCm72UkTAAAAAC/%D0%BA%D0%BE%D1%82-%D1%82%D0%B0%D0%BD%D0%B5%D1%86.gif');
+}
+
+.message {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#no {
+    transition: transform 0.3s ease-in-out;
+}
+
+#no:hover {
+    transform: translate(calc(10px - 20px * Math.random()), calc(10px - 20px * Math.random()));
+}
